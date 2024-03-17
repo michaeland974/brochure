@@ -7,7 +7,7 @@ $view = new View(
     'title' => 'Contact',
     'content' => 'number, address'
   ],
-  '/src/styles/test-contact.css'
+  (getenv('MODE') === 'PROD' ? '/resources' : '/src/resources')
 );
 
 include('./templates/three_row.php');

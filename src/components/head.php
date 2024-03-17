@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $view->get_title()?></title>
-  <link rel="stylesheet" href="/resources/global.css">
-  <link rel="stylesheet" href="/resources/reset.css">
+ 
+  <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/global.css"?> >
+  <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/reset.css"?> >
 </head>
 <body>
   

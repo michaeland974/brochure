@@ -2,12 +2,11 @@
 
   class View{
     private readonly array $view_data;
-    public string $stylesheet_path;
-    public string $abs_path = '/src/styles/global.css';
-  
-    function __construct(array $view_data, string $stylesheet_path) {
+    public string $dir_path;
+
+    function __construct(array $view_data, string $dir_path) {
       $this->view_data = $view_data;
-      $this->stylesheet_path = $stylesheet_path;
+      $this->dir_path = $dir_path;
     }
 
     function get_title(): string{
@@ -18,8 +17,8 @@
       return $this->view_data['content'];
     }
 
-    function get_abs_path(): string{
-      return $this->abs_path;
+    function get_dir_path(): string{
+      return $this->dir_path;
     }
   }
   
