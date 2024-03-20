@@ -88,3 +88,8 @@ button, input {
 	cursor: pointer;
 	outline: inherit;
 }
+
+a{
+  all: unset;
+  cursor: pointer;
+}

@@ -8,6 +8,7 @@
   <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/reset.css"?> >
   <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/global.css"?> >
   <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/nav.css"?> >
+  <script <?php echo "src={$view->get_dir_path()}/scripts/listener.js"?> defer></script>
 
 </head>
 <body>

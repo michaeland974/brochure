@@ -4,6 +4,39 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: var(--display-padding) 1rem var(--display-padding) 1rem;
+  color: var(--main);
+  z-index: 1;
+}
+
+#mobile-overlay{
+  position: absolute;
+  font-size: var(--fs-text);
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+  height: 100svh;
+  width: 100vw;
+  transition: 0.5s ease;
+  overflow: none;
+  background-color: var(--main);
+  color: var(--bg);
+  z-index: 1;
+}
+
+#mobile-overlay, .nav-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list{
+  gap: var(--display-padding);
+}
+
+#mobile-overlay[aria-expanded="true"]{
+  opacity: 1;
+  visibility: visible;
 }
 
 #logo{
@@ -20,9 +53,10 @@ header{
   height: 40px;
   position: relative;
   transition: 0.5s ease;
+  top: 0;
 }
 
-#toggle-icon:hover{
+#toggle-icon[aria-expanded="true"]{
   transform: rotate(90deg);
 }
 
@@ -50,11 +84,13 @@ header{
   transform: translate(-50%, 325%);
 }
 
-#toggle-icon:hover > span{
+#toggle-icon[aria-expanded="true"] > span{
+  background-color: var(--bg);
   transform: translate(-50%, 0%) rotate(45deg);
 }
 
-#toggle-icon:hover > span::after,
-#toggle-icon:hover > span::before{
+#toggle-icon[aria-expanded="true"] > span::after,
+#toggle-icon[aria-expanded="true"] > span::before{
+  background-color: var(--bg);
   transform: translate(-50%, 0%);
 }
