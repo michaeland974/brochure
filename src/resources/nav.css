@@ -1,16 +1,20 @@
 header{
   display: flex;
   height: 100px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: var(--display-padding) 1rem var(--display-padding) 1rem;
   color: var(--main);
+  font-family: Font-Bold;
   z-index: 1;
+  position: relative;
+  border-top: 3px solid var(--main);
+  margin-top: 3px;
 }
 
 #mobile-overlay{
   position: absolute;
   font-size: var(--fs-text);
+  font-family: Font-Bold;
   opacity: 0;
   visibility: hidden;
   background-color: white;
@@ -30,7 +34,7 @@ header{
   align-items: center;
 }
 
-.nav-list{
+#mobile-overlay > .nav-list{
   gap: var(--display-padding);
 }
 
@@ -39,21 +43,14 @@ header{
   visibility: visible;
 }
 
-#logo{
-  height: 100%
-}
-
-#logo > img{
-  height: 100%;
-  aspect-ratio: 1/1;
-}
-
 #toggle-icon{
   width: 40px;
   height: 40px;
-  position: relative;
+  position: absolute;
+  margin: 1rem;
   transition: 0.5s ease;
   top: 0;
+  right: 0;
 }
 
 #toggle-icon[aria-expanded="true"]{
@@ -93,4 +90,43 @@ header{
 #toggle-icon[aria-expanded="true"] > span::before{
   background-color: var(--bg);
   transform: translate(-50%, 0%);
+}
+
+#logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#logo > img{
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+#desktop-nav-list{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+#desktop-nav-list > ul{
+  display: none;
+  gap: clamp(1em, 2.5vw, 2em);
+  font-size: var(--fs-small);
+}
+
+#desktop-nav-list > ul > li{
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 600px) {
+  #desktop-nav-list > ul{
+    display: flex;
+  }
+
+  #toggle-icon{
+    display: none;
+  }
 }

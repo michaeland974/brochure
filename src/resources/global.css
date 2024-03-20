@@ -1,17 +1,23 @@
 @font-face {
   font-family: Font-Bold;
-  src: url('fonts/Inter-Bold.ttf');
+  src: url('fonts/Overpass-Bold.ttf');
 }
 
 @font-face {
   font-family: Font-Medium;
-  src: url('fonts/Inter-Medium.ttf');
+  src: url('fonts/Overpass-Regular.ttf');
 }
 
 @font-face {
   font-family: Font-Light;
-  src: url('fonts/Inter-Light.ttf');
+  src: url('fonts/Overpass-Light.ttf');
 }
+
+@font-face {
+  font-family: Cursive-Medium;
+  src: url('fonts/DancingScript-Regular.ttf');
+}
+
 
 body{
   --bg: #e0d3de;
@@ -23,16 +29,18 @@ body{
   --display-padding: 0.5rem;
 
   --fs-small: clamp(1rem, 2.5vw, 1.25rem);
-  --fs-text: clamp(1.6rem, 2.5vw, 1.75rem);
+  --fs-text: clamp(1.6rem, 2vw, 1.5rem);
   --fs-xl: clamp(2rem, 4vw, 2.5rem);
 
   background: var(--bg);
   color: var(--main);
+  border-top: 6px solid var(--main);
   font-family: Font-Medium;
   display: flex;
   flex-direction: column;
   position: relative;
   height: 100svh;
+  overflow-x: hidden;
 }
 
 .social-link{
