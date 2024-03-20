@@ -14,8 +14,19 @@
 }
 
 body{
-  background: lightgray;
+  --bg: #e0d3de;
+  --main: #453741;
+  --high: #5b8c5a;
+  --acc-1: #e3655b;
+  --acc-2: #cfd186;
+
+  --display-padding: 0.5rem;
+
+  background: var(--bg);
+  color: var(--main);
   font-family: Font-Medium;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-link{

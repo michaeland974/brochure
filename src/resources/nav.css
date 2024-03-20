@@ -1,0 +1,60 @@
+header{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--display-padding) 1rem var(--display-padding) 1rem;
+}
+
+#logo{
+  height: 100%
+}
+
+#logo > img{
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+#toggle-icon{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+#toggle-icon:hover{
+  transform: rotate(90deg);
+}
+
+#toggle-icon > span,
+#toggle-icon > span::after,
+#toggle-icon > span::before{
+  display: block;
+  content: '';
+  height: 4px;
+  width: 40px;
+  background-color: var(--main);
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+
+#toggle-icon > span::before{
+  transform: translate(-50%, -400%);
+}
+
+#toggle-icon > span::after{
+  transform: translate(-50%, 325%);
+}
+
+#toggle-icon:hover > span{
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+#toggle-icon:hover > span::after,
+#toggle-icon:hover > span::before{
+  transform: translate(-50%, 0%);
+}
