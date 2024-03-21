@@ -5,7 +5,7 @@
       <a href="./index.php">Home</a>
     </li>
     <li>
-      <a href="./index.php">About Us</a>
+      <a href="./about-us.php">About Us</a>
     </li>
     <li>
       <a href="./memberships.php">Memberships</a>
@@ -31,7 +31,7 @@
         <a href="./index.php">Home</a>
       </li>
       <li>
-        <a href="./index.php">About Us</a>
+        <a href="./about-us.php">About Us</a>
       </li>
       <li>
         <a href="./memberships.php">Memberships</a>

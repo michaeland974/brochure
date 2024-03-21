@@ -16,7 +16,7 @@
 
   <section class="img-group" class="group-a">
     <img <?php echo "src={$view->get_dir_path()}/images/flower-pink.jpg"?> 
-    alt="Garden Club Logo">
+    alt="Pink Flower">
   </section>
 
   <section class="card enrollment">
@@ -29,7 +29,7 @@
   
   <section class="img-group" class="group-b">
     <img <?php echo "src={$view->get_dir_path()}/images/flower-white.jpg"?> 
-            alt="Garden Club Logo">
+            alt="White Flower">
   </section>
           
 </div>
