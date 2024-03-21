@@ -1,0 +1,87 @@
+#contact{
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+#contact, 
+#contact > .h-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+}
+
+#contact h2{
+  font-family: Cursive-Medium;
+  width: 325px;
+  text-align: center;
+  margin-top: -12.5px;
+}
+
+#contact form{
+  width: 50%;
+  gap: 2em;
+}
+
+#contact form > div{
+  width: 100%;
+  gap: 0.5em;
+}
+
+#contact form,
+#contact form > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact form label{
+  font-family: Font-Bold;
+}
+
+#contact form input{
+  border-bottom: 1px solid var(--main);
+}
+
+#contact form select,
+#contact form select > option{
+  background-color: #5b8c5a0b;
+}
+
+#contact form select{
+  border: 2px solid #453741a0;
+  border-radius: 4px;
+}
+
+
+#contact form textarea{
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #453741a0;
+  border-radius: 4px;
+  background-color: #5b8c5a0b;
+}
+
+#field-comment{
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-submit{
+  background-color: var(--high);
+  color: var(--bg);
+  border-radius: 4px;
+  padding: 0.5em 1em 0.5em 1em;
+  box-shadow: inset 9px 9px 0px #578656,
+              inset -9px -9px 0px #5f925e;
+  transition: all 0.5s ease;
+  width: 50%;
+  align-self: center;
+}
+
+#contact-submit:hover{
+  opacity: 0.8;
+  transform: translateY(-7.5px);
+}

@@ -6,10 +6,10 @@ $view = new View(
   [
     'title' => 'Contact - Hennepin County Garden Club',
     'content' => 'lorem',
-    'stylesheet' => 'home.css'
+    'stylesheet' => 'contact.css'
   ],
   (getenv('MODE') === 'PROD' ? '/resources' : '/src/resources')
 );
 
-include('./templates/three_row.php');
+include('./templates/contact_row.php');
 ?>
