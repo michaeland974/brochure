@@ -1,0 +1,84 @@
+#home{
+  display: flex;
+  flex-direction: column;
+}
+
+#home > section{
+  height: var(--section-size);
+}
+
+#home > .banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#home > .banner > .h-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height:clamp(2em, 2.5vw, 3em);
+  position: relative;
+}
+
+#home > .banner > .h-group > h1{
+  font-family: Font-Bold;
+  font-size: var(--fs-xl);
+}
+
+#home > .banner > .h-group > h2{
+  font-family: Cursive-Medium;
+  font-size: var(--fs-text);
+}
+
+#home .leaf-group{
+  position: absolute;
+  top: 0;
+}
+
+#home .leaf-group[data-pos="left"]{
+  left: 15%;
+  transform: translateY(-15px);
+}
+
+#home .leaf-group[data-pos="right"]{
+  left: 75%;
+  transform: rotate(15deg);
+}
+
+#home .leaf-group > span{
+  display: inline-block;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-image: url("./svg/extras/LeafDARK.svg");
+  transform: scale(0.5);
+  opacity: 0.2;
+}
+
+#home .leaf-group > span:nth-child(2){
+  transform: translate(50px, -55px) rotate(30deg) scale(0.5)
+}
+
+#home .leaf-group > span:nth-child(3){
+  transform: translate(-50px, -35px) rotate(-100deg) scale(0.5);
+}
+
+#call-to-act{
+  background-color: var(--high);
+  color: var(--bg);
+  padding: 0.5em 1em 0.5em 1em;
+  box-shadow: inset 9px 9px 0px #578656,
+              inset -9px -9px 0px #5f925e;
+  transition: all 0.5s ease;
+}
+
+#call-to-act:hover{
+  opacity: 0.8;
+  transform: translateY(-7.5px);
+}

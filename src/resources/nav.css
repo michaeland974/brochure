@@ -4,24 +4,26 @@ header{
   align-items: flex-start;
   justify-content: space-between;
   color: var(--main);
-  font-family: Font-Bold;
   z-index: 1;
   position: relative;
   border-top: 3px solid var(--main);
   margin-top: 3px;
 }
 
+body:has(#mobile-overlay[aria-expanded="true"]){
+  overflow-y: hidden;
+}
+
 #mobile-overlay{
   position: absolute;
   font-size: var(--fs-text);
-  font-family: Font-Bold;
   opacity: 0;
   visibility: hidden;
   background-color: white;
   height: 100svh;
   width: 100vw;
   transition: 0.5s ease;
-  overflow: none;
+  /* overflow: hidden; */
   background-color: var(--main);
   color: var(--bg);
   z-index: 1;

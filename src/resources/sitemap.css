@@ -1,4 +1,9 @@
 footer{
+  background-color: var(--main);
+  color: var(--bg);
+}
+
+.pos-group{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,9 +11,6 @@ footer{
   gap: 1rem;
   padding: 1rem 0 1rem 0;
   position: relative;
-
-  background-color: var(--main);
-  color: var(--bg);
 }
 
 .signature{
@@ -65,12 +67,6 @@ footer{
 }
 
 @media only screen and (min-width: 750px) {
-  footer{
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 1rem 2rem 1rem;
-  }
-
   .flower-group{
     display: block;
   }

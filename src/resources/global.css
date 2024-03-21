@@ -27,6 +27,7 @@ body{
   --acc-2: #cfd186;
 
   --display-padding: 0.5rem;
+  --section-size: 65vh;
 
   --fs-small: clamp(1rem, 2.5vw, 1.25rem);
   --fs-text: clamp(1.6rem, 2vw, 1.5rem);
@@ -38,8 +39,9 @@ body{
   font-family: Font-Medium;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
-  height: 100svh;
+  height: 100%;
   overflow-x: hidden;
 }
 
