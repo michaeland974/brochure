@@ -119,6 +119,25 @@ header{
 
 #desktop-nav-list > ul > li{
   white-space: nowrap;
+  position: relative;
+}
+
+#desktop-nav-list > ul > li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+
+#desktop-nav-list > ul > li:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media only screen and (min-width: 600px) {

@@ -5,7 +5,8 @@ require_once './classes/View.php';
 $view = new View(
   [
     'title' => 'Contact',
-    'content' => 'number, address'
+    'content' => 'number, address',
+    'stylesheet' => 'home.css'
   ],
   (getenv('MODE') === 'PROD' ? '/resources' : '/src/resources')
 );

@@ -20,6 +20,10 @@
     function get_dir_path(): string{
       return $this->dir_path;
     }
+
+    function get_page_stylesheet(): string{
+      return $this->view_data['stylesheet'];
+    }
   }
   
 ?>
