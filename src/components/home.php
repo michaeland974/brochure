@@ -19,10 +19,12 @@
         <span></span>
       </div>
     </div>
-    <a id="call-to-act"
-       href="./contact.php">Join Us</a>
+    <a class="call-to-act"
+       href="./contact.php">Become a Member</a>
   </section>
-  <section class="content">
-
+  <section class="banner-image"
+           class="filler-image-container">
+    <img <?php echo "src={$view->get_dir_path()}/images/garden.jpg"?> 
+          alt="Garden Club Logo">
   </section>
 </div>

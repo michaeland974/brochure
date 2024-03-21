@@ -45,3 +45,7 @@ body{
   overflow-x: hidden;
 }
 
+.filler-image-container{
+  aspect-ratio: 2/3;
+}
+
