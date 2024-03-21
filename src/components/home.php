@@ -20,7 +20,7 @@
       </div>
     </div>
     <a class="call-to-act"
-       href="./contact.php">Become a Member</a>
+       href="./memberships.php">Become a Member</a>
   </section>
   <section class="banner-image"
            class="filler-image-container">

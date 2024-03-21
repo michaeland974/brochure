@@ -49,3 +49,22 @@ body{
   aspect-ratio: 2/3;
 }
 
+h1{
+  font-family: Font-Bold;
+  font-size: var(--fs-xl);
+  text-align: center;
+}
+
+h2{
+  font-family: Cursive-Medium;
+  font-size: var(--fs-text);
+}
+
+h3{
+  font-family: Font-Bold;
+}
+
+p{
+  font-family: Font-Light;
+}
+

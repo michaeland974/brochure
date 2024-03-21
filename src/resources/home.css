@@ -26,17 +26,6 @@
   position: relative;
 }
 
-#home > .banner > .h-group > h1{
-  font-family: Font-Bold;
-  font-size: var(--fs-xl);
-  text-align: center;
-}
-
-#home > .banner > .h-group > h2{
-  font-family: Cursive-Medium;
-  font-size: var(--fs-text);
-}
-
 #home .leaf-group{
   position: absolute;
   top: 0;

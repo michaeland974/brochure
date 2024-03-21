@@ -3,12 +3,12 @@ require_once './classes/View.php';
 
 $view = new View(
   [
-    'title' => 'Hennepin County Garden Club',
-    'content' => 'LoremLorem111',
-    'stylesheet' => 'home.css'
+    'title' => 'Memberships - Hennepin County Garden Club',
+    'content' => 'lorem',
+    'stylesheet' => 'memberships.css'
   ],
   (getenv('MODE') === 'PROD' ? '/resources' : '/src/resources')
 );
 
-include('./templates/one_row.php');
+include('./templates/two_row.php');
 ?>

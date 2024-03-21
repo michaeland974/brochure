@@ -4,8 +4,8 @@ require_once './classes/View.php';
 
 $view = new View(
   [
-    'title' => 'Contact',
-    'content' => 'number, address',
+    'title' => 'Contact - Hennepin County Garden Club',
+    'content' => 'lorem',
     'stylesheet' => 'home.css'
   ],
   (getenv('MODE') === 'PROD' ? '/resources' : '/src/resources')

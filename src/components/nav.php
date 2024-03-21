@@ -8,7 +8,7 @@
       <a href="./index.php">About Us</a>
     </li>
     <li>
-      <a href="./index.php">Memberships</a>
+      <a href="./memberships.php">Memberships</a>
     </li>
     <li>
       <a href="./index.php">Locations</a>
@@ -34,7 +34,7 @@
         <a href="./index.php">About Us</a>
       </li>
       <li>
-        <a href="./index.php">Memberships</a>
+        <a href="./memberships.php">Memberships</a>
       </li>
       <li>
         <a href="./index.php">Locations</a>

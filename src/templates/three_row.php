@@ -2,7 +2,9 @@
 
 include('./components/head.php');
 
-echo "Three row Contact";
+include('./components/nav.php');
+include('./components/nav.php');
+include('./components/sitemap.php');
 
 include('./components/foot.html');
 ?>
