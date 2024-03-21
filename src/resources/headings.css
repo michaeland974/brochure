@@ -1,0 +1,19 @@
+div h1{
+  font-family: Font-Bold;
+  font-size: var(--fs-xl);
+  text-align: center;
+}
+
+div h2{
+  font-family: Cursive-Medium;
+  font-size: var(--fs-text);
+}
+
+div h3{
+  font-family: Font-Bold;
+}
+
+div p{
+  font-family: Font-Light;
+}
+

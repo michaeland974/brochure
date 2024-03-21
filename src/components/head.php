@@ -10,6 +10,7 @@
   <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/global.css"?> >
   <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/nav.css"?> >
   <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/sitemap.css"?> >
+  <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/headings.css"?> >
 
   <!-- Page styles -->
   <link rel="stylesheet" <?php echo "href={$view->get_dir_path()}/{$view->get_page_stylesheet()}"?> >
