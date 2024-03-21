@@ -11,7 +11,7 @@
       <a href="./memberships.php">Memberships</a>
     </li>
     <li>
-      <a href="./index.php">Locations</a>
+      <a href="./locations.php">Locations</a>
     </li>
     <li>
       <a href="./contact.php">Contact</a>
@@ -37,7 +37,7 @@
         <a href="./memberships.php">Memberships</a>
       </li>
       <li>
-        <a href="./index.php">Locations</a>
+        <a href="./locations.php">Locations</a>
       </li>
       <li>
         <a href="./contact.php">Contact</a>

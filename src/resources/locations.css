@@ -1,0 +1,35 @@
+#locations{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+#locations > .content{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  #locations > .content{
+    width: 50%;
+  }
+}
+
+#locations h2{
+  font-weight: 800;
+}
+
+#locations .block{
+  padding: 1em;
+  border-left: 3px solid #5b8c5a7a;
+}
+
+#locations > .content > .block > p{
+  display: flex;
+  flex-direction: column;
+}
